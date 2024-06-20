@@ -1,0 +1,15 @@
+.banner {
+    section {
+        min-height: 60vh;
+        overflow-x: hidden;
+
+        .bg-banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 30% center;
+            z-index: -1;
+            position: absolute;
+        }
+    }
+}
