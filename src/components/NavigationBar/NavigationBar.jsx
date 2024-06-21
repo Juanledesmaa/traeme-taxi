@@ -21,7 +21,7 @@ const NavigationBar = () => (
                   alt=""
                   src={logo}
                   className="d-inline-block align-top"
-                  style={{ height: '30px', marginRight: '10px' }} // Adjust height and margin as needed
+                  style={{ height: '30px', marginRight: '10px' }}
                 />
                 <h3 className="m-0"><span className="first-word">traeme</span> <span className="last-word">taxi</span></h3>
               </div>
