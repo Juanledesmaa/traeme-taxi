@@ -26,7 +26,7 @@ const Services = (props) => (
                 <div className='row'>
                     {props.data
                         ? props.data.map((d, i) => (
-                            <div key={`${d.title}-${i}`} className='col-xs-4 col-md-4'>
+                            <div key={`${d.title}-${i}`} className='col-xs-12 col-sm-12 col-lg-4'>
                                 <div className="icon-center">
                                     <div className="icon-container">
                                         {/* Use dynamic image path from imageMap */}

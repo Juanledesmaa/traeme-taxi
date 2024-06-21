@@ -24,6 +24,18 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
             max-width: 100%; /* Ensures container does not exceed viewport width */
+
+            .form {
+                text-align: left;
+            }
+
+            .button-container {
+                text-align: center;
+                .btn {
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                }
+            }
         }
 
     }

@@ -30,12 +30,12 @@ const Banner = () => {
           <div className="shadow-overlay"></div>
           <div className="button-container">
             <Row className="justify-content-center">
-              <Col xs={12} sm={6} className="text-center mb-3 mb-sm-0">
+              <Col xs={12} sm={6} lg={4} xl={3} className="text-center mb-3">
                 <Button onClick={makePhoneCall} variant="primary" size="sm" block className="d-flex align-items-center justify-content-center">
                   <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" /> Llamar
                 </Button>
               </Col>
-              <Col xs={12} sm={6} className="text-center">
+              <Col xs={12} sm={6} lg={4} xl={3} className="text-center">
                 <Button 
                   variant="secondary" 
                   size="sm" 
