@@ -1,0 +1,38 @@
+@import '../../styles/imports';
+
+.navigationBar {
+    .navbar {
+        background-color: $secondary-color;
+
+        h3 {
+            margin: 0;
+            // Style the first word (Traeme)
+            span.first-word {
+                color: $white; /* Set primary color for the first word */
+            }
+
+            // Style the last word (Taxi)
+            span.last-word {
+                color: $primary-color;
+                margin-left: -4px;
+            }
+
+            &.icon-text {
+                margin-top: -4px;
+                color: $white;
+            }
+        }
+
+        img {
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .svg-inline--fa {
+            margin-right: 10px;
+            color: $white;
+        }
+    }
+}
