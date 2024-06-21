@@ -55,4 +55,10 @@
             }
         }
     }
+
+    @media (min-width: 1024px) {
+        section {
+            min-height: 50vh;
+        }
+    }
 }
