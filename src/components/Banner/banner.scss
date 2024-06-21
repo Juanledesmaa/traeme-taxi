@@ -28,19 +28,31 @@
         .button-container {
             position: absolute;
             bottom: 20px;
-            padding: 0 30px;
+            padding: 0 50px;
+            width: 100% !important;
 
             .btn {
                 width: 100%;
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-        }
-    }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 30px;
 
-    @include media-breakpoint-up(sm) {
-        section {
-            min-height: 100vh;
+                h3 {
+                    margin: 0 !important;
+                    color: $white;
+                }
+
+                &.whatsapp {
+                    background-color: $whatsapp-green;
+                }
+
+                .svg-inline--fa {
+                    margin-right: 8px;
+                    font-size: 25px;
+                }
+            }
         }
     }
 }

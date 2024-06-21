@@ -1,16 +1,31 @@
+@import '../../styles/imports';
+
 .contact {
     .content-contact {
-        height: 90vh;
 
-        .container {
-            padding: 40px;
-            border-radius: 10px;
+        h2 {
+            position: relative;
+
+            // Style the first word (Traeme)
+            span.first-word {
+                color: $secondary-color; /* Set primary color for the first word */
+            }
+
+            // Style the last word (Taxi)
+            span.last-word {
+                color: $primary-color; /* Set secondary color for the last word */
+            }
         }
 
-        .container#form {
-            height: 90vh;
-            margin-bottom: 20px;
+        .content-box {
+            background-color: $white; /* White background */
+            margin:  120px 20px; /* Centering with 20px margin on top and bottom */
+            padding: 20px; /* Padding inside the container */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+            max-width: 100%; /* Ensures container does not exceed viewport width */
         }
+
     }
 
 }

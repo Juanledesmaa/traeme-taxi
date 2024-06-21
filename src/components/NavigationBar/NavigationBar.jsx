@@ -25,7 +25,7 @@ const NavigationBar = () => (
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
         <FontAwesomeIcon icon={faPhone}/>
-            <h3 className="icon-text">123-456-7890</h3>
+            <h3 className="icon-text">470-721-8124</h3>
         </Navbar.Collapse>
       </Container>
     </Navbar>

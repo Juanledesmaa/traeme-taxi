@@ -1,109 +1,39 @@
 import React from "react";
 import { Parallax } from 'react-parallax';
 import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
-//include images into your bundle
+import Form from 'react-bootstrap/Form';
 import background from "../../img/atlanta_background.png";
 import './Contact.scss';
 
-
-//create your first component
 const Contact = () => (
     <div className="contact">
         <Parallax blur={{ min: -15, max: 15 }} bgImage={background} bgImageAlt="the cat" strength={-500} className="bg-banner">
             <div className="content-contact">
-                <div id="contact">
-                    <h1 className="pt-3 text-center font-details-b pb-3">CONTACT ME</h1>
+                <div className="content-box">
+                    <h2><span className="first-word">¿Quiénes</span> <span className="last-word">somos?</span></h2>
 
-                    <div id="form" className="container bg-light p-5">
-                        <Row>
-                            <Col className="d-flex justify-content-center flex-wrap">
-                                <div className="m-2">
-                                    <a
-                                        href="mailto:wvelagrundy@gmail.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline-danger" title="wvelagrundy@gmail.com">
-                                            <i className="fas fa-envelope-square"></i> Email Me
-                                        </Button>
-                                    </a>
-                                </div>
-                                <div className="m-2">
-                                    <a
-                                        href="https://www.linkedin.com/in/walter-vela-grundy-324a65ba/?locale=en_US"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline-primary" title="Visit my LinkenIn">
-                                            <i className="fab fa-linkedin"></i> LinkedIn
-                                        </Button>
-                                    </a>
-                                </div>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Text className="text-muted">
+                                We'll never share your email with anyone else.
+                            </Form.Text>
+                        </Form.Group>
 
-                                <div className="m-2">
-                                    <a
-                                        href="https://www.instagram.com/waltervegr/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline-info" title="Tweets are welcomed!">
-                                            <i className="fab fa-twitter"></i> Instagram
-                                        </Button>
-                                    </a>
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-
-
-                    <div className="container bg-light p-5">
-                        <Row>
-                            <Col className="d-flex justify-content-center flex-wrap">
-                                <div className="m-2">
-                                    <a
-                                        href="mailto:wvelagrundy@gmail.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline-danger" title="wvelagrundy@gmail.com">
-                                            <i className="fas fa-envelope-square"></i> Email Me
-                                        </Button>
-                                    </a>
-                                </div>
-                                <div className="m-2">
-                                    <a
-                                        href="https://www.linkedin.com/in/walter-vela-grundy-324a65ba/?locale=en_US"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline-primary" title="Visit my LinkenIn">
-                                            <i className="fab fa-linkedin"></i> LinkedIn
-                                        </Button>
-                                    </a>
-                                </div>
-
-                                <div className="m-2">
-                                    <a
-                                        href="https://www.instagram.com/waltervegr/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline-info" title="Tweets are welcomed!">
-                                            <i className="fab fa-twitter"></i> Instagram
-                                        </Button>
-                                    </a>
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-
-
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="Password" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Control as="textarea" aria-label="With textarea" />
+                        </Form.Group>
+                        <Button variant="primary" type="submit">
+                            Submit
+                        </Button>
+                    </Form>
                 </div>
             </div>
-
         </Parallax>
     </div>
 );

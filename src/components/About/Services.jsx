@@ -20,7 +20,7 @@ const Services = (props) => (
     <div className="services">
         <div id="features" className='text-center'>
             <div className='container'>
-                <div className='col-md-10 col-md-offset-1 section-title'>
+                <div className='col-md-12 section-title'>
                     <h2><span className="first-word">Nuestros</span> <span className="last-word">Servicios</span></h2>
                 </div>
                 <div className='row'>
@@ -33,7 +33,7 @@ const Services = (props) => (
                                         <img src={imageMap[d.image]} alt={d.title} />
                                     </div>
                                 </div>
-                                <h3>{d.title}</h3>
+                                <h2>{d.title}</h2>
                                 <p>{d.text}</p>
                             </div>
                         ))
