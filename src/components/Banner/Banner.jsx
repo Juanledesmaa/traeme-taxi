@@ -1,11 +1,10 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import { Col, Row } from 'react-bootstrap';
-import bannerSolid from "../../img/traeme-taxi-solid.png";
+import bannerSolid from "../../img/Traeme_taxi_background_high_resolution.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-
 
 import './banner.scss';
 
