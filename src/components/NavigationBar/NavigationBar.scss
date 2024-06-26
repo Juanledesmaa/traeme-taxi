@@ -20,12 +20,6 @@
             &.icon-text {
                 margin-top: -4px;
                 color: $white;
-
-                @media not all and (min-resolution:.001dpcm) { 
-                    @supports (-webkit-appearance:none) { 
-                      margin-top: -0px !important;
-                    }
-                }
             }
         }
 
@@ -39,6 +33,13 @@
         .svg-inline--fa {
             margin-right: 10px;
             color: $white;
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+        /* Safari only override */
+        ::i-block-chrome, h3 .icon-text {
+            margin-top: 0px !important;
         }
     }
 }
