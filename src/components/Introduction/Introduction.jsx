@@ -3,7 +3,7 @@ import { Parallax } from 'react-parallax';
 
 //include images into your bundle
 import './Introduction.scss';
-import background from "../../img/friday_night_background.png";
+import background from "../../img/friday_nigh_race_high_quality.png";
 
 //create your first component
 const Introduction = () => (
