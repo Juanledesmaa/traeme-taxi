@@ -20,6 +20,12 @@
             &.icon-text {
                 margin-top: -4px;
                 color: $white;
+
+                @media not all and (min-resolution:.001dpcm) { 
+                    @supports (-webkit-appearance:none) { 
+                      margin-top: -0px !important;
+                    }
+                }
             }
         }
 
